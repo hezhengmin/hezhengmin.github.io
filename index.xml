@@ -8,12 +8,13 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 29 May 2022 23:30:30 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>My First Post</title>
+      <title>建立網站</title>
       <link>http://example.org/posts/my-first-post/</link>
       <pubDate>Sun, 29 May 2022 23:30:30 +0800</pubDate>
       
       <guid>http://example.org/posts/my-first-post/</guid>
-      <description></description>
+      <description>安裝 Hugo https://github.com/gohugoio/hugo/releases
+創建新站點 確認有無安裝hugo hugo version 建立 hugo new site quickstart 添加主題 cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 添加一些內容 hugo new posts/my-first-post.md 啟動 Hugo 服務器 hugo server -D 構建靜態頁面 hugo -D cd public file_server . git init git remote add origin https://github.com/hezhengmin/hezhengmin.github.io.git git add -A git commit -m &amp;#34;init site&amp;#34; git push origin master </description>
     </item>
     
   </channel>
