@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Postman-儲存JwtToken為全域變數 | MingHe&#39; Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="1. 新增script const resp = pm.response.json(); pm.environment.set(&#34;jwtToken&#34;, resp.jwtToken) 程式回傳jwt token 2. 新增JWT變數 3. Request API上加入Token (Authorization) 4. Request API上加入Token (Header) 參考 Postman 儲存 API 變數 JWT Token 驗證資訊">
+    <meta name="generator" content="Hugo 0.99.1" />
+    
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+    
+    
+    
+      
+
+    
+
+    
+    
+    <meta property="og:title" content="Postman-儲存JwtToken為全域變數" />
+<meta property="og:description" content="1. 新增script const resp = pm.response.json(); pm.environment.set(&#34;jwtToken&#34;, resp.jwtToken) 程式回傳jwt token 2. 新增JWT變數 3. Request API上加入Token (Authorization) 4. Request API上加入Token (Header) 參考 Postman 儲存 API 變數 JWT Token 驗證資訊" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/postman-post/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-06T14:09:08+08:00" />
+<meta property="article:modified_time" content="2022-08-06T14:09:08+08:00" />
+
+<meta itemprop="name" content="Postman-儲存JwtToken為全域變數">
+<meta itemprop="description" content="1. 新增script const resp = pm.response.json(); pm.environment.set(&#34;jwtToken&#34;, resp.jwtToken) 程式回傳jwt token 2. 新增JWT變數 3. Request API上加入Token (Authorization) 4. Request API上加入Token (Header) 參考 Postman 儲存 API 變數 JWT Token 驗證資訊"><meta itemprop="datePublished" content="2022-08-06T14:09:08+08:00" />
+<meta itemprop="dateModified" content="2022-08-06T14:09:08+08:00" />
+<meta itemprop="wordCount" content="28">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Postman-儲存JwtToken為全域變數"/>
+<meta name="twitter:description" content="1. 新增script const resp = pm.response.json(); pm.environment.set(&#34;jwtToken&#34;, resp.jwtToken) 程式回傳jwt token 2. 新增JWT變數 3. Request API上加入Token (Authorization) 4. Request API上加入Token (Header) 參考 Postman 儲存 API 變數 JWT Token 驗證資訊"/>
+
+	
+  </head>
+
+  <body class="ma0 avenir bg-near-white">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        MingHe&#39; Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      
+<div class="ananke-socials">
+  
+</div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        POSTS
+      </aside>
+      
+
+
+
+
+
+
+
+
+
+
+  <div id="sharing" class="mt3 ananke-socials">
+    
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Postman-儲存JwtToken為全域變數</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2022-08-06T14:09:08+08:00">August 6, 2022</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="1-新增script">1. 新增script</h2>
+<pre tabindex="0"><code>const resp = pm.response.json();
+pm.environment.set(&#34;jwtToken&#34;, resp.jwtToken)
+</code></pre><p><img src="/images/2/postman_test.jpg" alt="postman_test"></p>
+<pre tabindex="0"><code>程式回傳jwt token
+</code></pre><p><img src="/images/2/postman_jwt.jpg" alt="postman_jwt"></p>
+<h2 id="2-新增jwt變數">2. 新增JWT變數</h2>
+<p><img src="/images/2/postman_add_env.jpg" alt="postman_add_env"></p>
+<p><img src="/images/2/postman_save_env.jpg" alt="postman_save_env"></p>
+<h2 id="3-request-api上加入token-authorization">3. Request API上加入Token (Authorization)</h2>
+<p><img src="/images/2/postman_setting_env.jpg" alt="postman_setting_env"></p>
+<h2 id="4-request-api上加入token-header">4. Request API上加入Token (Header)</h2>
+<p><img src="/images/2/postman_setting_header.jpg" alt="postman_setting_header"></p>
+<h2 id="參考">參考</h2>
+<p><a href="https://jscinin.medium.com/postman-jwt-%E5%88%A9%E7%94%A8%E8%AE%8A%E6%95%B8%E5%84%B2%E5%AD%98%E9%A9%97%E8%AD%89%E8%B3%87%E8%A8%8A-d5c988cf028a">Postman 儲存 API 變數 JWT Token 驗證資訊</a></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://example.org/" >
+    &copy;  MingHe' Blog 2022 
+  </a>
+    <div>
+<div class="ananke-socials">
+  
+</div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
