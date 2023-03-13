@@ -13,7 +13,22 @@
       <pubDate>Sat, 06 Aug 2022 16:20:33 +0800</pubDate>
       
       <guid>http://example.org/posts/git-tutorial/</guid>
-      <description></description>
+      <description>Git設定 查看設定 git config &amp;ndash;list
+設定帳號 git config &amp;ndash;global user.name &amp;ldquo;hezhengmin&amp;rdquo;
+設定信箱 git config &amp;ndash;global user.email &amp;ldquo;zhengmin099@gmail.com&amp;rdquo;
+Git基本用法 建立Repository git init
+複製他人專案 git clone https://github.com/hezhengmin/Minesweeper.git
+檢查狀態 git status
+查詢記錄 git log
+新增全部的檔案 git add .
+git add &amp;ndash;all
+全部修改提交 git commit -am &amp;ldquo;modified&amp;rdquo;
+推送到你的遠端 git push origin master
+遠端主機分支master更新到本地主機 git pull origin master
+刪除檔案 git rm &amp;ldquo;1. Two Sum.cpp&amp;rdquo;
+Git分支用法 建立新branch並切換過去 git checkout -b &amp;lt;branch名稱&amp;gt;
+查看電腦上的branch(按q可以離開) git branch
+查看所有的branch(包含remote) git branch -a</description>
     </item>
     
     <item>

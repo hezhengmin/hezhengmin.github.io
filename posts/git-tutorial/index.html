@@ -6,7 +6,22 @@
     
     <title>Git Tutorial | MingHe&#39; Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Git設定 查看設定 git config &ndash;list
+設定帳號 git config &ndash;global user.name &ldquo;hezhengmin&rdquo;
+設定信箱 git config &ndash;global user.email &ldquo;zhengmin099@gmail.com&rdquo;
+Git基本用法 建立Repository git init
+複製他人專案 git clone https://github.com/hezhengmin/Minesweeper.git
+檢查狀態 git status
+查詢記錄 git log
+新增全部的檔案 git add .
+git add &ndash;all
+全部修改提交 git commit -am &ldquo;modified&rdquo;
+推送到你的遠端 git push origin master
+遠端主機分支master更新到本地主機 git pull origin master
+刪除檔案 git rm &ldquo;1. Two Sum.cpp&rdquo;
+Git分支用法 建立新branch並切換過去 git checkout -b &lt;branch名稱&gt;
+查看電腦上的branch(按q可以離開) git branch
+查看所有的branch(包含remote) git branch -a">
     <meta name="generator" content="Hugo 0.111.3">
     
     
@@ -30,18 +45,63 @@
     
     
     <meta property="og:title" content="Git Tutorial" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Git設定 查看設定 git config &ndash;list
+設定帳號 git config &ndash;global user.name &ldquo;hezhengmin&rdquo;
+設定信箱 git config &ndash;global user.email &ldquo;zhengmin099@gmail.com&rdquo;
+Git基本用法 建立Repository git init
+複製他人專案 git clone https://github.com/hezhengmin/Minesweeper.git
+檢查狀態 git status
+查詢記錄 git log
+新增全部的檔案 git add .
+git add &ndash;all
+全部修改提交 git commit -am &ldquo;modified&rdquo;
+推送到你的遠端 git push origin master
+遠端主機分支master更新到本地主機 git pull origin master
+刪除檔案 git rm &ldquo;1. Two Sum.cpp&rdquo;
+Git分支用法 建立新branch並切換過去 git checkout -b &lt;branch名稱&gt;
+查看電腦上的branch(按q可以離開) git branch
+查看所有的branch(包含remote) git branch -a" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://example.org/posts/git-tutorial/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-08-06T16:20:33+08:00" />
 <meta property="article:modified_time" content="2022-08-06T16:20:33+08:00" />
 <meta itemprop="name" content="Git Tutorial">
-<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-08-06T16:20:33+08:00" />
+<meta itemprop="description" content="Git設定 查看設定 git config &ndash;list
+設定帳號 git config &ndash;global user.name &ldquo;hezhengmin&rdquo;
+設定信箱 git config &ndash;global user.email &ldquo;zhengmin099@gmail.com&rdquo;
+Git基本用法 建立Repository git init
+複製他人專案 git clone https://github.com/hezhengmin/Minesweeper.git
+檢查狀態 git status
+查詢記錄 git log
+新增全部的檔案 git add .
+git add &ndash;all
+全部修改提交 git commit -am &ldquo;modified&rdquo;
+推送到你的遠端 git push origin master
+遠端主機分支master更新到本地主機 git pull origin master
+刪除檔案 git rm &ldquo;1. Two Sum.cpp&rdquo;
+Git分支用法 建立新branch並切換過去 git checkout -b &lt;branch名稱&gt;
+查看電腦上的branch(按q可以離開) git branch
+查看所有的branch(包含remote) git branch -a"><meta itemprop="datePublished" content="2022-08-06T16:20:33+08:00" />
 <meta itemprop="dateModified" content="2022-08-06T16:20:33+08:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="85">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Git Tutorial"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Git設定 查看設定 git config &ndash;list
+設定帳號 git config &ndash;global user.name &ldquo;hezhengmin&rdquo;
+設定信箱 git config &ndash;global user.email &ldquo;zhengmin099@gmail.com&rdquo;
+Git基本用法 建立Repository git init
+複製他人專案 git clone https://github.com/hezhengmin/Minesweeper.git
+檢查狀態 git status
+查詢記錄 git log
+新增全部的檔案 git add .
+git add &ndash;all
+全部修改提交 git commit -am &ldquo;modified&rdquo;
+推送到你的遠端 git push origin master
+遠端主機分支master更新到本地主機 git pull origin master
+刪除檔案 git rm &ldquo;1. Two Sum.cpp&rdquo;
+Git分支用法 建立新branch並切換過去 git checkout -b &lt;branch名稱&gt;
+查看電腦上的branch(按q可以離開) git branch
+查看所有的branch(包含remote) git branch -a"/>
 
 	
   </head>
@@ -114,7 +174,132 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><ul class="pa0">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h3 id="git設定">Git設定</h3>
+<ul>
+<li>查看設定</li>
+</ul>
+<blockquote>
+<p>git config &ndash;list</p>
+</blockquote>
+<ul>
+<li>設定帳號</li>
+</ul>
+<blockquote>
+<p>git config &ndash;global user.name &ldquo;hezhengmin&rdquo;</p>
+</blockquote>
+<ul>
+<li>設定信箱</li>
+</ul>
+<blockquote>
+<p>git config &ndash;global user.email &ldquo;<a href="mailto:zhengmin099@gmail.com">zhengmin099@gmail.com</a>&rdquo;</p>
+</blockquote>
+<h3 id="git基本用法">Git基本用法</h3>
+<ul>
+<li>建立Repository</li>
+</ul>
+<blockquote>
+<p>git init</p>
+</blockquote>
+<ul>
+<li>複製他人專案</li>
+</ul>
+<blockquote>
+<p>git clone <a href="https://github.com/hezhengmin/Minesweeper.git">https://github.com/hezhengmin/Minesweeper.git</a></p>
+</blockquote>
+<ul>
+<li>檢查狀態</li>
+</ul>
+<blockquote>
+<p>git status</p>
+</blockquote>
+<ul>
+<li>查詢記錄</li>
+</ul>
+<blockquote>
+<p>git log</p>
+</blockquote>
+<ul>
+<li>新增全部的檔案</li>
+</ul>
+<blockquote>
+<p>git add .<br>
+git add &ndash;all</p>
+</blockquote>
+<ul>
+<li>全部修改提交</li>
+</ul>
+<blockquote>
+<p>git commit -am &ldquo;modified&rdquo;</p>
+</blockquote>
+<ul>
+<li>推送到你的遠端</li>
+</ul>
+<blockquote>
+<p>git push origin master</p>
+</blockquote>
+<ul>
+<li>遠端主機分支master更新到本地主機</li>
+</ul>
+<blockquote>
+<p>git pull origin master</p>
+</blockquote>
+<ul>
+<li>刪除檔案</li>
+</ul>
+<blockquote>
+<p>git rm &ldquo;1. Two Sum.cpp&rdquo;</p>
+</blockquote>
+<h3 id="git分支用法">Git分支用法</h3>
+<ul>
+<li>建立新branch並切換過去</li>
+</ul>
+<blockquote>
+<p>git checkout -b &lt;branch名稱&gt;</p>
+</blockquote>
+<ul>
+<li>查看電腦上的branch(按q可以離開)</li>
+</ul>
+<blockquote>
+<p>git branch</p>
+</blockquote>
+<ul>
+<li>查看所有的branch(包含remote)</li>
+</ul>
+<blockquote>
+<p>git branch -a</p>
+</blockquote>
+<h3 id="其他">其他</h3>
+<ul>
+<li>建立資料夾</li>
+</ul>
+<blockquote>
+<p>mkdir Temp</p>
+</blockquote>
+<ul>
+<li>列出所有檔名</li>
+</ul>
+<blockquote>
+<p>ls -al</p>
+</blockquote>
+<ul>
+<li>不儲存直接離開</li>
+</ul>
+<blockquote>
+<p>:q</p>
+</blockquote>
+<ul>
+<li>強制離開不存檔</li>
+</ul>
+<blockquote>
+<p>:q!</p>
+</blockquote>
+<ul>
+<li>儲存並離開</li>
+</ul>
+<blockquote>
+<p>:wq</p>
+</blockquote>
+<ul class="pa0">
   
 </ul>
 <div class="mt6 instapaper_ignoref">
