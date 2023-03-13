@@ -31,7 +31,7 @@
       <pubDate>Sun, 29 May 2022 23:30:30 +0800</pubDate>
       
       <guid>http://example.org/posts/my-first-post/</guid>
-      <description>安裝 Hugo 官方提供 Hugo安裝路徑 設定環境變數 創建新站點 確認有無安裝hugo hugo version 建立 hugo new site quickstart 添加主題 cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 添加一些內容 hugo new posts/my-first-post.md 啟動 Hugo 服務器 hugo server -D 構建靜態頁面 hugo -D cd public file_server . git init git remote add origin https://github.com/hezhengmin/hezhengmin.github.io.git git add -A git commit -m &amp;#34;init site&amp;#34; git push origin master 開啟http://localhost:1313/ 測試網站 PS D:\Github\Hugo&amp;gt; cd quickstart PS D:\Github\Hugo\quickstart&amp;gt; hugo server -D 參考  https://gohugo.</description>
+      <description>安裝 Hugo 官方提供 Hugo安裝路徑 設定環境變數 創建新站點 確認有無安裝hugo hugo version 建立 hugo new site quickstart 添加主題 cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 添加一些內容 hugo new posts/my-first-post.md 啟動 Hugo 服務器 hugo server -D 構建靜態頁面 hugo -D cd public file_server . git init git remote add origin https://github.com/hezhengmin/hezhengmin.github.io.git git add -A git commit -m &amp;#34;init site&amp;#34; git push origin master 開啟http://localhost:1313/ 測試網站 PS D:\Github\Hugo&amp;gt; cd quickstart PS D:\Github\Hugo\quickstart&amp;gt; hugo server -D 參考 https://gohugo.</description>
     </item>
     
   </channel>
