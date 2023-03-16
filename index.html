@@ -118,6 +118,34 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/20230316/" class="color-inherit dim link">
+            Vue Provide 和 Inject
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          原本要傳遞三層
+App -&gt; FirstLayer -&gt; SecondLayer -&gt; ThirdLayer
+可使用Provide和Inject提供跨多層組件傳遞數據的方式
+App -&gt; ThirdLayer
+App.vue &lt;template&gt; &lt;div id=&#34;app&#34;&gt; &lt;div :class=&#34;theme&#34;&gt; &lt;button @click=&#34;changeFontSize&#34;&gt;&#34;第一層&#34;字型變大&lt;/button&gt; &lt;FirstLayer ref=&#34;first&#34; /&gt; &lt;/div&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import FirstLayer from &#34;./components/FirstLayer&#34;; export default { name: &#34;App&#34;, data() { return { myName: &#34;ming&#34;, theme: &#34;theme&#34; }; }, provide() { return { myName: this.myName, changeBgColor: this.changeBgColor }; }, components: { FirstLayer }, methods: { changeBgColor() { console.log(&#34;changeBgColor&#34;); this.theme = &#34;dark-theme&#34;; }, changeFontSize() { this.
+        </div>
+          <a href="/posts/20230316/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/git-tutorial/" class="color-inherit dim link">
             Git Tutorial
             </a>
@@ -173,32 +201,25 @@ Git分支用法 建立新branch並切換過去 git checkout -b &lt;branch名稱&
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/my-first-post/" class="color-inherit dim link">
-            建立網站
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          安裝 Hugo 官方提供 Hugo安裝路徑 設定環境變數 創建新站點 確認有無安裝hugo hugo version 建立 hugo new site quickstart 添加主題 cd quickstart git init git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke 添加一些內容 hugo new posts/my-first-post.md 啟動 Hugo 服務器 hugo server -D 構建靜態頁面 hugo -D cd public file_server . git init git remote add origin https://github.com/hezhengmin/hezhengmin.github.io.git git add -A git commit -m &#34;init site&#34; git push origin master 開啟http://localhost:1313/ 測試網站 PS D:\Github\Hugo&gt; cd quickstart PS D:\Github\Hugo\quickstart&gt; hugo server -D 參考 https://gohugo.
-        </div>
-          <a href="/posts/my-first-post/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
+      
+      <section class="w-100">
+        <h1 class="f3">More</h1>
+        
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/my-first-post/" class="link black dim">
+              建立網站
+            </a>
+          </h2>
+        
+
+        
+        
+          <a href="/posts/" class="link db f6 pa2 br3 bg-mid-gray white dim w4 tc">All Posts</a>
+        
+        </section>
       
 
       </div>

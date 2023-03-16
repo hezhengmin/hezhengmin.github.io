@@ -93,6 +93,27 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Posts</span>
     <h1 class="f3 near-black">
+      <a href="/posts/20230316/" class="link black dim">
+        Vue Provide 和 Inject
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      原本要傳遞三層
+App -&gt; FirstLayer -&gt; SecondLayer -&gt; ThirdLayer
+可使用Provide和Inject提供跨多層組件傳遞數據的方式
+App -&gt; ThirdLayer
+App.vue &lt;template&gt; &lt;div id=&#34;app&#34;&gt; &lt;div :class=&#34;theme&#34;&gt; &lt;button @click=&#34;changeFontSize&#34;&gt;&#34;第一層&#34;字型變大&lt;/button&gt; &lt;FirstLayer ref=&#34;first&#34; /&gt; &lt;/div&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import FirstLayer from &#34;./components/FirstLayer&#34;; export default { name: &#34;App&#34;, data() { return { myName: &#34;ming&#34;, theme: &#34;theme&#34; }; }, provide() { return { myName: this.myName, changeBgColor: this.changeBgColor }; }, components: { FirstLayer }, methods: { changeBgColor() { console.log(&#34;changeBgColor&#34;); this.theme = &#34;dark-theme&#34;; }, changeFontSize() { this.
+    </div>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
+  <div class="bg-white mb3 pa4 gray overflow-hidden">
+    <span class="f6 db">Posts</span>
+    <h1 class="f3 near-black">
       <a href="/posts/git-tutorial/" class="link black dim">
         Git Tutorial
       </a>
