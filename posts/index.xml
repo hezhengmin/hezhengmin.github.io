@@ -6,7 +6,17 @@
     <description>Recent content in Posts on MingHe&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Mar 2023 22:40:42 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Mar 2024 22:33:07 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>父組件傳遞資料在子組件偵測應用</title>
+      <link>http://example.org/posts/20240313/</link>
+      <pubDate>Wed, 13 Mar 2024 22:33:07 +0800</pubDate>
+      
+      <guid>http://example.org/posts/20240313/</guid>
+      <description>(CustomSelect.vue)子組件要偵聽父組件(App.vue)來的props，使用watch監聽，來變更子組件的數據。(備註:computed也可以)
+父組件 App.vue &amp;lt;template&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; 父組件： &amp;lt;el-input-number v-model=&amp;#34;parentSelectedValue&amp;#34; @change=&amp;#34;handleChange&amp;#34; :min=&amp;#34;1&amp;#34; :max=&amp;#34;10&amp;#34; label=&amp;#34;描述文字&amp;#34;&amp;gt;&amp;lt;/el-input-number&amp;gt; &amp;lt;custom-select :parentSelectedValue=&amp;#34;parentSelectedValue&amp;#34; :title=&amp;#34;title&amp;#34; @returnSelectedChange=&amp;#34;getSelectedValue&amp;#34;&amp;gt;&amp;lt;/custom-select&amp;gt; 子組件，變更時選擇的數值：{{ selectedValue }} &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt; &amp;lt;script&amp;gt; import customSelect from &amp;#34;./components/CustomSelect.vue&amp;#34;; export default { name: &amp;#34;App&amp;#34;, components: { customSelect, }, data() { return { selectedValue: null, title: &amp;#34;縣市&amp;#34;, parentSelectedValue: null, }; }, methods: { getSelectedValue(val) { this.selectedValue = val; }, handleChange(value) { this.parentSelectedValue = value; }, }, }; &amp;lt;/script&amp;gt; &amp;lt;style&amp;gt;&amp;lt;/style&amp;gt; 子組件 CustomSelect.vue &amp;lt;template&amp;gt; &amp;lt;div&amp;gt; &amp;lt;b&amp;gt;{{ title }}：&amp;lt;/b&amp;gt; &amp;lt;el-select v-model=&amp;#34;value&amp;#34; placeholder=&amp;#34;請選擇縣市&amp;#34; @change=&amp;#34;selectedChange&amp;#34;&amp;gt; &amp;lt;el-option v-for=&amp;#34;item in options&amp;#34; :key=&amp;#34;item.</description>
+    </item>
+    
     <item>
       <title>建立 Vue.js 前端專案</title>
       <link>http://example.org/posts/202303191040/</link>
