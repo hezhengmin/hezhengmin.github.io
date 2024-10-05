@@ -118,6 +118,30 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/202410051735/" class="color-inherit dim link">
+            VSCode 擴充套件設定
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+           Prettier - Code formatter vetur { &#34;vetur.validation.template&#34;: false, &#34;prettier.printWidth&#34;: 200, // 超過 XX 個字元就換行 &#34;prettier.tabWidth&#34;: 4, // 程式碼縮排 4 個空格 &#34;prettier.useTabs&#34;: false, // 不使用 tab，預設使用空格 &#34;prettier.semi&#34;: true, // 語句結尾加上分號 &#34;prettier.singleQuote&#34;: false, // 使用單引號，預設使用雙引號 &#34;prettier.quoteProps&#34;: &#34;as-needed&#34;, // 預設 &#39;as-needed&#39;，只有在屬性名稱包含特殊字元或空格時才會使用雙引號。否則，它將使用單引號。 &#34;prettier.trailingComma&#34;: &#34;es5&#34;, // 在物件或陣列最後一個元素後面加上逗號 &#34;prettier.bracketSpacing&#34;: true, // 在物件的左右括號間加上空格 &#34;prettier.arrowParens&#34;: &#34;always&#34;, // 箭頭函式只有一個參數時，也需要括號 &#34;prettier.endOfLine&#34;: &#34;lf&#34;, // 換行符號，預設 lf &#34;prettier.proseWrap&#34;: &#34;preserve&#34;, // 是否要换行 &#34;prettier.bracketSameLine&#34;: true, //結束標籤&gt;不換行 &#34;prettier.htmlWhitespaceSensitivity&#34;: &#34;ignore&#34;, //ignore的話就是所有元素間的空格都會被忽略 &#34;editor.defaultFormatter&#34;: &#34;esbenp.prettier-vscode&#34;, &#34;editor.formatOnSave&#34;: true //儲存時，自動格式化 } 
+        </div>
+          <a href="/posts/202410051735/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="relative w-100 mb4">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
+    <div class="flex flex-column flex-row-ns">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/posts/20240313/" class="color-inherit dim link">
             父組件傳遞資料在子組件偵測應用
             </a>
@@ -159,40 +183,18 @@
 
           </div>
         
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-      <div class="blah w-100">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/20230316/" class="color-inherit dim link">
-            Vue Provide 和 Inject
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          原本要傳遞三層
-App -&gt; FirstLayer -&gt; SecondLayer -&gt; ThirdLayer
-可使用Provide和Inject提供跨多層組件傳遞數據的方式
-App -&gt; ThirdLayer
-App.vue &lt;template&gt; &lt;div id=&#34;app&#34;&gt; &lt;div :class=&#34;theme&#34;&gt; &lt;button @click=&#34;changeFontSize&#34;&gt;&#34;第一層&#34;字型變大&lt;/button&gt; &lt;FirstLayer ref=&#34;first&#34; /&gt; &lt;/div&gt; &lt;/div&gt; &lt;/template&gt; &lt;script&gt; import FirstLayer from &#34;./components/FirstLayer&#34;; export default { name: &#34;App&#34;, data() { return { myName: &#34;ming&#34;, theme: &#34;theme&#34; }; }, provide() { return { myName: this.myName, changeBgColor: this.changeBgColor }; }, components: { FirstLayer }, methods: { changeBgColor() { console.log(&#34;changeBgColor&#34;); this.theme = &#34;dark-theme&#34;; }, changeFontSize() { this.
-        </div>
-          <a href="/posts/20230316/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
       </section>
 
       
       <section class="w-100">
         <h1 class="f3">More</h1>
         
+        
+          <h2 class="f5 fw4 mb4 dib mr3">
+            <a href="/posts/20230316/" class="link black dim">
+              Vue Provide 和 Inject
+            </a>
+          </h2>
         
           <h2 class="f5 fw4 mb4 dib mr3">
             <a href="/posts/git-tutorial/" class="link black dim">
