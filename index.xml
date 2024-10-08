@@ -6,14 +6,23 @@
     <description>Recent content on MingHe&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Oct 2024 17:35:13 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Oct 2024 00:59:10 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 Vue CLI 建立專案</title>
+      <link>http://example.org/posts/202410061259/</link>
+      <pubDate>Sun, 06 Oct 2024 00:59:10 +0800</pubDate>
+      
+      <guid>http://example.org/posts/202410061259/</guid>
+      <description> 安裝 Vue CLI 安裝 Vue CLI npm install -g @vue/cli 使用 vue create [專案名稱] 或 vue create . 選擇手動建立專案 (Manually select features) 套件選用 Babel、Vuex、CSS Pre-processors Vue版本，選擇2 Vue-Router為了讓在網址上會多出#，輸入n 選擇Sass/SCSS 存檔在 package.json 不要儲存相關設定 安裝完成 參考 https://hsuchihting.github.io/vue-js/20200404/497821688/ </description>
+    </item>
+    
     <item>
       <title>VSCode 擴充套件設定</title>
       <link>http://example.org/posts/202410051735/</link>
       <pubDate>Sat, 05 Oct 2024 17:35:13 +0800</pubDate>
       
       <guid>http://example.org/posts/202410051735/</guid>
-      <description> Prettier - Code formatter vetur { &amp;#34;vetur.validation.template&amp;#34;: false, &amp;#34;prettier.printWidth&amp;#34;: 200, // 超過 XX 個字元就換行 &amp;#34;prettier.tabWidth&amp;#34;: 4, // 程式碼縮排 4 個空格 &amp;#34;prettier.useTabs&amp;#34;: false, // 不使用 tab，預設使用空格 &amp;#34;prettier.semi&amp;#34;: true, // 語句結尾加上分號 &amp;#34;prettier.singleQuote&amp;#34;: false, // 使用單引號，預設使用雙引號 &amp;#34;prettier.quoteProps&amp;#34;: &amp;#34;as-needed&amp;#34;, // 預設 &amp;#39;as-needed&amp;#39;，只有在屬性名稱包含特殊字元或空格時才會使用雙引號。否則，它將使用單引號。 &amp;#34;prettier.trailingComma&amp;#34;: &amp;#34;es5&amp;#34;, // 在物件或陣列最後一個元素後面加上逗號 &amp;#34;prettier.bracketSpacing&amp;#34;: true, // 在物件的左右括號間加上空格 &amp;#34;prettier.arrowParens&amp;#34;: &amp;#34;always&amp;#34;, // 箭頭函式只有一個參數時，也需要括號 &amp;#34;prettier.endOfLine&amp;#34;: &amp;#34;lf&amp;#34;, // 換行符號，預設 lf &amp;#34;prettier.proseWrap&amp;#34;: &amp;#34;preserve&amp;#34;, // 是否要换行 &amp;#34;prettier.bracketSameLine&amp;#34;: true, //結束標籤&amp;gt;不換行 &amp;#34;prettier.htmlWhitespaceSensitivity&amp;#34;: &amp;#34;ignore&amp;#34;, //ignore的話就是所有元素間的空格都會被忽略 &amp;#34;editor.defaultFormatter&amp;#34;: &amp;#34;esbenp.prettier-vscode&amp;#34;, &amp;#34;editor.formatOnSave&amp;#34;: true //儲存時，自動格式化 } </description>
+      <description>Prettier - Code formatter vetur { &amp;#34;vetur.validation.template&amp;#34;: false, &amp;#34;prettier.printWidth&amp;#34;: 200, // 超過 XX 個字元就換行 &amp;#34;prettier.tabWidth&amp;#34;: 4, // 程式碼縮排 4 個空格 &amp;#34;prettier.useTabs&amp;#34;: false, // 不使用 tab，預設使用空格 &amp;#34;prettier.semi&amp;#34;: true, // 語句結尾加上分號 &amp;#34;prettier.singleQuote&amp;#34;: false, // 使用單引號，預設使用雙引號 &amp;#34;prettier.quoteProps&amp;#34;: &amp;#34;as-needed&amp;#34;, // 預設 &amp;#39;as-needed&amp;#39;，只有在屬性名稱包含特殊字元或空格時才會使用雙引號。否則，它將使用單引號。 &amp;#34;prettier.trailingComma&amp;#34;: &amp;#34;es5&amp;#34;, // 在物件或陣列最後一個元素後面加上逗號 &amp;#34;prettier.bracketSpacing&amp;#34;: true, // 在物件的左右括號間加上空格 &amp;#34;prettier.arrowParens&amp;#34;: &amp;#34;always&amp;#34;, // 箭頭函式只有一個參數時，也需要括號 &amp;#34;prettier.endOfLine&amp;#34;: &amp;#34;lf&amp;#34;, // 換行符號，預設 lf &amp;#34;prettier.proseWrap&amp;#34;: &amp;#34;preserve&amp;#34;, // 是否要换行 &amp;#34;prettier.bracketSameLine&amp;#34;: true, //結束標籤&amp;gt;不換行 &amp;#34;prettier.htmlWhitespaceSensitivity&amp;#34;: &amp;#34;ignore&amp;#34;, //ignore的話就是所有元素間的空格都會被忽略 &amp;#34;editor.defaultFormatter&amp;#34;: &amp;#34;esbenp.prettier-vscode&amp;#34;, &amp;#34;editor.formatOnSave&amp;#34;: true //儲存時，自動格式化 } koro1FileHeader { &amp;#34;fileheader.</description>
     </item>
     
     <item>
