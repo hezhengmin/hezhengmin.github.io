@@ -6,7 +6,22 @@
     <description>Recent content in Posts on MingHe&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Mar 2025 23:57:55 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Sep 2025 23:39:57 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Oracle Database 23ai 入門指南</title>
+      <link>http://example.org/posts/202509172339/</link>
+      <pubDate>Wed, 17 Sep 2025 23:39:57 +0800</pubDate>
+      
+      <guid>http://example.org/posts/202509172339/</guid>
+      <description>這是一份針對開發者的 Oracle Database 23ai 快速入門指南，內容涵蓋其核心新功能、安裝步驟，以及如何開始您的第一個查詢。本文結合了官方建議與實用的操作範例。
+1. 核心新功能：不僅僅是資料庫 Oracle 23ai 的標語是 &amp;ldquo;AI for your Data&amp;rdquo;，它引入了多項突破性功能，旨在將 AI 和開發者便利性深度整合到資料庫中。
+🚀 AI Vector Search 這可能是 23ai 最重大的新功能。它讓您能直接在 Oracle 資料庫中儲存、索引和搜尋向量（Vector）。
+什麼是向量？ 向量是物件（如文字、圖片、音訊）的數學表示。 能做什麼？ 您可以進行 &amp;ldquo;語意搜尋&amp;rdquo; 或 &amp;ldquo;相似性搜尋&amp;rdquo;。例如，找到與一張圖片 &amp;ldquo;相似&amp;rdquo; 的所有圖片，或與一段文字描述 &amp;ldquo;語意相關&amp;rdquo; 的文件。這對於建立推薦系統、RAG (檢索增強生成) 應用至關重要。 🚀 JSON Relational Duality View 此功能完美地橋接了 JSON 文件的靈活性與關聯式模型的結構化優勢。
+開發者視角：開發者可以繼續使用他們熟悉的 JSON 格式來存取和操作資料。 DBA 視角：資料庫內部將這些 JSON 文件對應到標準的關聯式表格。 優點：兼具兩者之長，開發快、查詢快、資料一致性高。 🚀 Operational Property Graphs (OPG) 您現在可以直接在 Oracle 資料庫上執行圖形資料分析。
+能做什麼？ 分析複雜的關係網路，如社交網路分析、金融詐欺偵測、供應鏈路徑規劃等。 🚀 True Cache 一個在資料庫中介層運作的高效能快取。它可以顯著提升應用程式的回應速度，且能自動保持與主資料庫的資料一致性，開發者無需手動管理快取失效。
+2. 安裝指南 您可以選擇適合自己的安裝方式。對於初學者，我們推薦使用 Docker，因为它更簡單快速。</description>
+    </item>
+    
     <item>
       <title>vue init webpack [專案名稱]</title>
       <link>http://example.org/posts/202503031157/</link>
